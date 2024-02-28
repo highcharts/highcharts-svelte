@@ -1,0 +1,34 @@
+{
+    "name": "highcharts-svelte",
+    "private": true,
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "check": "svelte-check --tsconfig ./tsconfig.json",
+        "prepare": "husky"
+    },
+    "lint-staged": {
+        "{.js,.ts,.svelte}": "eslint"
+    },
+    "devDependencies": {
+        "@sveltejs/vite-plugin-svelte": "^3.0.2",
+        "@tsconfig/svelte": "^5.0.2",
+        "@typescript-eslint/eslint-plugin": "^7.1.0",
+        "@typescript-eslint/parser": "^7.1.0",
+        "eslint": "^8.57.0",
+        "eslint-plugin-svelte": "^2.35.1",
+        "husky": "^9.0.11",
+        "lint-staged": "^15.2.2",
+        "svelte": "^4.2.11",
+        "svelte-check": "^3.6.4",
+        "tslib": "^2.6.2",
+        "typescript": "^5.2.2",
+        "vite": "^5.1.4"
+    },
+    "dependencies": {
+        "highcharts": "^11.3.0"
+    }
+}
