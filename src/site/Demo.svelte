@@ -37,11 +37,11 @@
 </script>
 
 <div class="py-12">
-    <div class="max-w-xl mx-auto px-4 py-4 border border-gray-300 rounded-2xl overflow-hidden mb-8">
+    <div class="max-w-xl mx-auto px-4 py-4 border border-gray-300 rounded-2xl overflow-hidden mb-8 shadow-sm">
         <HighchartsSvelte options={options} highcharts={Highcharts}/>
     </div>
 
-    <div class="max-w-xl mx-auto px-6 py-7 border border-gray-300 rounded-2xl">
+    <div class="max-w-xl mx-auto px-6 py-7 border border-gray-300 rounded-2xl shadow-sm">
         <h2 class="font-bold text-2xl mb-4">Customize your chart dynamically</h2>
         <div class="space-y-4">
             <div>
