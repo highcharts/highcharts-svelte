@@ -1,7 +1,6 @@
 <script lang="ts">
     import 'tailwindcss/tailwind.css';
     import '../app.css';
-    import { fade } from 'svelte/transition';
 
     import Highcharts from 'highcharts';
     import ExportingModule from 'highcharts/modules/exporting';
