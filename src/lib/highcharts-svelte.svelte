@@ -15,17 +15,21 @@
 
     onMount(() => {
         if (!chartContainer) {
-            console.error('[highcharts-svelte] Could not find the chart\'s container.');
+            console.error("[highcharts-svelte] Could not find the chart's container.");
             return;
         }
 
         if (!options) {
-            console.error('[highcharts-svelte] No options provided to the HighchartsSvelte component.');
+            console.error(
+                '[highcharts-svelte] No options provided to the HighchartsSvelte component.'
+            );
             return;
         }
 
         if (!(highcharts as any)[constr]) {
-            console.error(`[highcharts-svelte] The constructor '${constr}' does not exist within Highcharts`);
+            console.error(
+                `[highcharts-svelte] The constructor '${constr}' does not exist within Highcharts`
+            );
             return;
         }
 

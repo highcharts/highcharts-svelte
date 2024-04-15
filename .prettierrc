@@ -1,0 +1,13 @@
+{
+    "semi": true,
+    "tabWidth": 4,
+    "singleQuote": true,
+    "trailingComma": "none",
+    "printWidth": 90,
+    "bracketSpacing": true,
+    "htmlWhitespaceSensitivity": "css",
+    "endOfLine": "lf",
+    "quoteProps": "as-needed",
+    "bracketSameLine": true,
+    "eol-last": "always"
+}
