@@ -28,14 +28,14 @@
         "{.js,.ts,.svelte}": "eslint"
     },
     "files": [
-        "dist",
-        "src",
-        "LICENSE"
+        ".svelte-kit/__package__",
+        "LICENSE",
+        "README"
     ],
     "exports": {
         ".": {
-            "types": "./dist/types/index.d.ts",
-            "import": "./dist/index.mjs"
+            "types": "./.svelte-kit/__package__/index.d.ts",
+            "import": "./.svelte-kit/__package__/index.js"
         }
     },
     "devDependencies": {
