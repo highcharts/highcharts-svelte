@@ -20,10 +20,9 @@ Highcharts is a peer dependency of this package, and you need to install it sepa
 
 ## Usage
 
-The package exports the `HighchartsSvelte` component which accepts 6 props:
+The package exports the `Chart`, `StockChart`, `MapChart`, `GanttChart` components which accepts 6 props:
 | Prop | Type | Default | Description |
 |--------------|--------------------------------------------------------------------|------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `constr` | `'chart' \| 'stockChart' \| 'mapChart' \| 'ganttChart'` | `'chart'` | Specifies the type of chart to create. |
 | `options` | `Highcharts.Options` | None | The configuration options for the chart. This is a required prop that defines the [Highcharts chart options](https://api.highcharts.com/highcharts/). |
 | `updateArgs` | `boolean \| Partial<Highcharts.AnimationOptionsObject>` | `true` | Determines how the chart updates when the `options` object changes. Can be a boolean or an animation settings object to enable/disable animation during update. |
 | `highcharts` | `typeof Highcharts` | `Highcharts` | Allows passing a custom instance of Highcharts, which is useful if you want to use a specific version of Highcharts or need to load modules that are not included by default. |
@@ -36,7 +35,7 @@ The package exports the `HighchartsSvelte` component which accepts 6 props:
 <script lang="ts">
     import Highcharts from 'highcharts';
     import ExportingModule from 'highcharts/modules/exporting';
-    import HighchartsSvelte from 'highcharts-svelte';
+    import { Chart } from 'highcharts-svelte'; // Chart is also exported by default
 
     // Applying a certain Highcharts module
     ExportingModule(Highcharts);
@@ -54,10 +53,7 @@ The package exports the `HighchartsSvelte` component which accepts 6 props:
     };
 </script>
 
-<HighchartsSvelte
-    constr="chart"
-    options={options}
-    highcharts={Highcharts}/>
+<Chart options={options} highcharts={Highcharts}/>
 ```
 
 ## Contributing

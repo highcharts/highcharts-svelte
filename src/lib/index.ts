@@ -1,4 +1,7 @@
-import HighchartsSvelte from './highcharts-svelte.svelte';
+import Chart from './chart.svelte';
+import StockChart from './stock-chart.svelte';
+import MapChart from './map-chart.svelte';
+import GanttChart from './gantt-chart.svelte';
 
-export default HighchartsSvelte;
-export { HighchartsSvelte };
+export default Chart;
+export { Chart, StockChart, MapChart, GanttChart };
