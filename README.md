@@ -13,7 +13,7 @@ A lightweight Svelte wrapper for Highcharts, making it easy to integrate Highcha
 You can install `highcharts-svelte` using npm:
 
 ```bash
-npm install highcharts-svelte highcharts --save
+npm install @highcharts/svelte highcharts --save
 ```
 
 Highcharts is a peer dependency of this package, and you need to install it separately.
@@ -35,7 +35,7 @@ The package exports the `Chart`, `StockChart`, `MapChart`, `GanttChart` componen
 <script lang="ts">
     import Highcharts from 'highcharts';
     import ExportingModule from 'highcharts/modules/exporting';
-    import { Chart } from 'highcharts-svelte'; // Chart is also exported by default
+    import { Chart } from '@highcharts/svelte'; // Chart is also exported by default
 
     // Applying a certain Highcharts module
     ExportingModule(Highcharts);

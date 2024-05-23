@@ -1,3 +1,3 @@
 # Changelog
 
-## [18.04.2024] 1.0.0 - initial release of the package! 🎉
+## [23.05.2024] 0.0.9 - initial release of the package! 🎉
