@@ -1,4 +1,4 @@
-# highcharts-svelte
+# @highcharts/svelte
 
 A lightweight Svelte wrapper for Highcharts, making it easy to integrate Highcharts into your Svelte applications. This package allows you to utilize all the powerful features of Highcharts with the minimalistic approach of Svelte.
 
@@ -10,7 +10,7 @@ A lightweight Svelte wrapper for Highcharts, making it easy to integrate Highcha
 
 ## Installation
 
-You can install `highcharts-svelte` using npm:
+You can install `@highcharts/svelte` using npm:
 
 ```bash
 npm install @highcharts/svelte highcharts --save
@@ -62,7 +62,7 @@ Contributions are always welcome! Whether it's submitting a bug report, a pull r
 
 ## Support
 
-If you have any issues with highcharts-svelte, please open an issue on the GitHub repository. If you have a Highcharts-related question, feel free to contact our support team: https://www.highcharts.com/blog/support/
+If you have any issues with @highcharts/svelte, please open an issue on the GitHub repository. If you have a Highcharts-related question, feel free to contact our support team: https://www.highcharts.com/blog/support/
 
 ## Helpful resources
 
