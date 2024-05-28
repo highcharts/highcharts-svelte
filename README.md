@@ -56,6 +56,12 @@ The package exports the `Chart`, `StockChart`, `MapChart`, `GanttChart` componen
 <Chart options={options} highcharts={Highcharts}/>
 ```
 
+## Online examples
+- **Options are reactive, chart is automatically updated:** https://stackblitz.com/edit/vitejs-vite-fadf42?file=src%2FApp.svelte
+- **You can create Highcharts Stock charts**: https://stackblitz.com/edit/vitejs-vite-5ctkzx?file=src%2FApp.svelte
+- **You can use Highcharts modules (exporting example)**: https://stackblitz.com/edit/vitejs-vite-hcvilc?file=src%2FApp.svelte
+- **You can access chart instance**: https://stackblitz.com/edit/vitejs-vite-tu5pos?file=src%2FApp.svelte
+
 ## Contributing
 
 Contributions are always welcome! Whether it's submitting a bug report, a pull request, or even suggesting a new feature, all contributions are appreciated. Before contributing, please read the project's contribution guidelines.
