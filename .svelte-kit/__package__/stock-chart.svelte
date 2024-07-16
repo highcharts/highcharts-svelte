@@ -1,4 +1,5 @@
-<script>import * as Highcharts from "highcharts/highstock";
+<script>import cloneDeep from "lodash.clonedeep";
+import * as Highcharts from "highcharts/highstock";
 import { onMount, onDestroy } from "svelte";
 export let options;
 export let updateArgs = true;
@@ -27,7 +28,7 @@ onDestroy(() => {
 });
 $:
   if (chart && chart.update && options) {
-    chart.update(structuredClone(options), true, true, updateArgs);
+    chart.update(cloneDeep(options), true, true, updateArgs);
   }
 </script>
 
