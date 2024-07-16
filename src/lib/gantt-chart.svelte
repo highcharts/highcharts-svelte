@@ -1,4 +1,5 @@
 <script lang="ts">
+    import cloneDeep from 'lodash.clonedeep';
     import * as Highcharts from 'highcharts';
     import GanttModule from 'highcharts/modules/gantt';
     import { onMount, onDestroy } from 'svelte';
@@ -36,7 +37,7 @@
     });
 
     $: if (chart && chart.update && options) {
-        chart.update(structuredClone(options), true, true, updateArgs);
+        chart.update(cloneDeep(options), true, true, updateArgs);
     }
 </script>
 
