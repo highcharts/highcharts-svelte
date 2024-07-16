@@ -1,4 +1,4 @@
-# highcharts-svelte
+# @highcharts/svelte
 
 A lightweight Svelte wrapper for Highcharts, making it easy to integrate Highcharts into your Svelte applications. This package allows you to utilize all the powerful features of Highcharts with the minimalistic approach of Svelte.
 
@@ -10,10 +10,10 @@ A lightweight Svelte wrapper for Highcharts, making it easy to integrate Highcha
 
 ## Installation
 
-You can install `highcharts-svelte` using npm:
+You can install `@highcharts/svelte` using npm:
 
 ```bash
-npm install highcharts-svelte highcharts --save
+npm install @highcharts/svelte highcharts --save
 ```
 
 Highcharts is a peer dependency of this package, and you need to install it separately.
@@ -35,7 +35,7 @@ The package exports the `Chart`, `StockChart`, `MapChart`, `GanttChart` componen
 <script lang="ts">
     import Highcharts from 'highcharts';
     import ExportingModule from 'highcharts/modules/exporting';
-    import { Chart } from 'highcharts-svelte'; // Chart is also exported by default
+    import { Chart } from '@highcharts/svelte'; // Chart is also exported by default
 
     // Applying a certain Highcharts module
     ExportingModule(Highcharts);
@@ -56,13 +56,19 @@ The package exports the `Chart`, `StockChart`, `MapChart`, `GanttChart` componen
 <Chart options={options} highcharts={Highcharts}/>
 ```
 
+## Online examples
+- **Options are reactive, chart is automatically updated:** https://stackblitz.com/edit/vitejs-vite-fadf42?file=src%2FApp.svelte
+- **You can create Highcharts Stock charts**: https://stackblitz.com/edit/vitejs-vite-5ctkzx?file=src%2FApp.svelte
+- **You can use Highcharts modules (exporting example)**: https://stackblitz.com/edit/vitejs-vite-hcvilc?file=src%2FApp.svelte
+- **You can access chart instance**: https://stackblitz.com/edit/vitejs-vite-tu5pos?file=src%2FApp.svelte
+
 ## Contributing
 
 Contributions are always welcome! Whether it's submitting a bug report, a pull request, or even suggesting a new feature, all contributions are appreciated. Before contributing, please read the project's contribution guidelines.
 
 ## Support
 
-If you have any issues with highcharts-svelte, please open an issue on the GitHub repository. If you have a Highcharts-related question, feel free to contact our support team: https://www.highcharts.com/blog/support/
+If you have any issues with @highcharts/svelte, please open an issue on the GitHub repository. If you have a Highcharts-related question, feel free to contact our support team: https://www.highcharts.com/blog/support/
 
 ## Helpful resources
 

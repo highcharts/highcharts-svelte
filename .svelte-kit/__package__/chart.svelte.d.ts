@@ -2,7 +2,6 @@ import { SvelteComponentTyped } from "svelte";
 import * as Highcharts from 'highcharts';
 declare const __propDef: {
     props: {
-        constr?: ("chart" | "stockChart" | "mapChart" | "ganttChart") | undefined;
         options: Highcharts.Options;
         updateArgs?: boolean | Partial<Highcharts.AnimationOptionsObject> | undefined;
         highcharts?: typeof Highcharts | undefined;
@@ -14,9 +13,9 @@ declare const __propDef: {
     };
     slots: {};
 };
-export type HighchartsSvelteProps = typeof __propDef.props;
-export type HighchartsSvelteEvents = typeof __propDef.events;
-export type HighchartsSvelteSlots = typeof __propDef.slots;
-export default class HighchartsSvelte extends SvelteComponentTyped<HighchartsSvelteProps, HighchartsSvelteEvents, HighchartsSvelteSlots> {
+export type ChartProps = typeof __propDef.props;
+export type ChartEvents = typeof __propDef.events;
+export type ChartSlots = typeof __propDef.slots;
+export default class Chart extends SvelteComponentTyped<ChartProps, ChartEvents, ChartSlots> {
 }
 export {};
