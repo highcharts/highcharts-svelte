@@ -33,12 +33,16 @@ The package exports the `Chart`, `StockChart`, `MapChart`, `GanttChart` componen
 
 ```Svelte
 <script lang="ts">
-    import Highcharts from 'highcharts';
-    import ExportingModule from 'highcharts/modules/exporting';
-    import { Chart } from '@highcharts/svelte'; // Chart is also exported by default
+    import * as Highcharts from 'highcharts';
 
-    // Applying a certain Highcharts module
-    ExportingModule(Highcharts);
+    /**
+     * Since Highcharts v12, all the imported modules
+     * are automatically applied.
+     */
+    import 'highcharts/modules/exporting';
+
+    /** The <Chart/> component is also exported by default */
+    import { Chart } from '@highcharts/svelte';
 
     let options = {
         chart: {
@@ -57,10 +61,11 @@ The package exports the `Chart`, `StockChart`, `MapChart`, `GanttChart` componen
 ```
 
 ## Online examples
-- **Options are reactive, chart is automatically updated:** https://stackblitz.com/edit/vitejs-vite-fadf42?file=src%2FApp.svelte
-- **You can create Highcharts Stock charts**: https://stackblitz.com/edit/vitejs-vite-5ctkzx?file=src%2FApp.svelte
-- **You can use Highcharts modules (exporting example)**: https://stackblitz.com/edit/vitejs-vite-hcvilc?file=src%2FApp.svelte
-- **You can access chart instance**: https://stackblitz.com/edit/vitejs-vite-tu5pos?file=src%2FApp.svelte
+
+-   **Options are reactive, chart is automatically updated:** https://stackblitz.com/edit/vitejs-vite-fadf42?file=src%2FApp.svelte
+-   **You can create Highcharts Stock charts**: https://stackblitz.com/edit/vitejs-vite-5ctkzx?file=src%2FApp.svelte
+-   **You can use Highcharts modules (exporting example)**: https://stackblitz.com/edit/vitejs-vite-hcvilc?file=src%2FApp.svelte
+-   **You can access chart instance**: https://stackblitz.com/edit/vitejs-vite-tu5pos?file=src%2FApp.svelte
 
 ## Contributing
 
