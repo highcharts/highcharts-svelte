@@ -24,7 +24,7 @@
     "bugs": {
         "url": "https://github.com/highcharts/highcharts-svelte/issues"
     },
-    "license": "https://www.highcharts.com/license",
+    "license": "See license in LICENSE",
     "lint-staged": {
         "{.js,.ts,.svelte}": "eslint"
     },
